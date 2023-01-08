@@ -101,7 +101,7 @@ router.post(
       res.json({ authtoken });
     } catch (error) {
       console.error(error.message);
-      res.status(500).send("some error occured");
+      res.status(500).send("some error occured"+error.message);
     }
   }
 );
